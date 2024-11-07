@@ -1,0 +1,77 @@
+/* Sidebar.css */
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .sidebar .question-name,
+  .sidebar .description,
+  .sidebar .schema,
+  .sidebar .hint,
+  .sidebar .tags {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .sidebar .question-name p,
+  .sidebar .description p,
+  .sidebar .hint p,
+  .sidebar .tags p {
+    margin: 5px 0;
+  }
+  
+  /* Table styles */
+  .schema table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .schema th,
+  .schema td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  .schema th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  .hint p {
+    color: #888;
+  }
+  
+  /* Tags Section */
+  .tags p {
+    font-size: 14px;
+    color: #007bff;
+    margin-top: 5px;
+  }
+  
+  .tags p a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .tags p a:hover {
+    text-decoration: underline;
+  }
+  

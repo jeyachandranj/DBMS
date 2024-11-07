@@ -1,0 +1,47 @@
+/* Editor.css */
+.editor {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .editor-header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .query-container {
+    margin-bottom: 20px;
+  }
+  
+  .query-container textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-container th, .table-container td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .table-container th {
+    background-color: #f1f1f1;
+  }
+  
