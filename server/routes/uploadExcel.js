@@ -131,4 +131,35 @@ router.get('/execute-query', (req, res) => {
     });
   });
 
+  app.get('/check-output/:challengeId', async (req, res) => {
+    try {
+      const challengeId = req.params.challengeId;
+      const sqlQuery = req.query.sql;
+  
+      if (!sqlQuery) {
+        return res.status(400).send('SQL query is required');
+      }
+  
+      const challenge = await Challenge.findOne({ _id: challengeId });
+      if (!challenge) {
+        return res.status(404).send('Challenge not found');
+      }
+      const expectedOutputData = challenge.outputData;
+  
+      db.query(sqlQuery, (err, results) => {
+        if (err) {
+          console.error('Error executing query:', err);
+          return res.status(500).send('Error executing query');
+        }
+  
+        const isEqual = JSON.stringify(results) === JSON.stringify(expectedOutputData);
+  
+        res.json({ isEqual });
+      });
+    } catch (error) {
+      console.error('Error:', error);
+      res.status(500).send('An error occurred');
+    }
+  });
+
 module.exports = router;
