@@ -1,0 +1,116 @@
+/* Container Styling */
+.challenge-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title Styling */
+.challenge-form h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.challenge-form label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Input Styling */
+.challenge-form input[type="text"],
+.challenge-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Focus Style */
+.challenge-form input[type="text"]:focus,
+.challenge-form input[type="file"]:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 4px rgba(79, 70, 229, 0.3);
+}
+
+/* Custom Button Styling for File Inputs */
+.upload-button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #6366f1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.upload-button:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.upload-button:active {
+  background-color: #3b36b2;
+  transform: translateY(0);
+}
+
+/* Submit Button Styling */
+.add-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #22c55e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+.add-button:hover {
+  background-color: #16a34a;
+  transform: translateY(-2px);
+}
+
+.add-button:active {
+  background-color: #15803d;
+  transform: translateY(0);
+}
+
+/* Error Message Style */
+.error-message {
+  color: #dc2626;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Form Spacing */
+.challenge-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
