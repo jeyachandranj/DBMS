@@ -1,0 +1,32 @@
+.normalization-container {
+    width: 80%;
+    background-color: #e0f2f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .normalization-box {
+    border-bottom: 1px solid #004d40;
+    padding: 15px;
+  }
+  
+  .normalization-title {
+    color: #004d40;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0;
+    transition: color 0.3s;
+  }
+  
+  .normalization-title:hover {
+    color: #00796b;
+  }
+  
+  .normalization-content {
+    margin-top: 10px;
+    color: #004d40;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: max-height 0.3s ease-in-out;
+  }
+  

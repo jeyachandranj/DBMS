@@ -1,0 +1,35 @@
+.database-design-container {
+    background-color: #f9fafb;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #004d40;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .content-box {
+    line-height: 1.6;
+  }
+  
+  .content-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .content-box li {
+    margin-bottom: 10px;
+  }
+  
+  .content-box strong {
+    color: #004d40;
+  }
+  
