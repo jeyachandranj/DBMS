@@ -131,7 +131,7 @@ router.get('/execute-query', (req, res) => {
     });
   });
 
-  app.get('/check-output/:challengeId', async (req, res) => {
+  router.get('/check-output/:challengeId', async (req, res) => {
     try {
       const challengeId = req.params.challengeId;
       const sqlQuery = req.query.sql;
